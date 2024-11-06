@@ -17,7 +17,7 @@ import (
 
 	"github.com/launchbynttdata/lcaf-component-terratest/lib"
 	"github.com/launchbynttdata/lcaf-component-terratest/types"
-	"github.com/launchbynttdata/lcaf-skeleton-terraform/tests/testimpl"
+	"github.com/launchbynttdata/tf-azurerm-module_primitive-postgresql_server/tests/testimpl"
 )
 
 const (

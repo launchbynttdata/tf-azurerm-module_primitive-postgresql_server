@@ -1,4 +1,4 @@
-module github.com/launchbynttdata/lcaf-skeleton-terraform
+module github.com/launchbynttdata/tf-azurerm-module_primitive-postgresql_server
 
 go 1.21
 
@@ -8,6 +8,7 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/postgresql/armpostgresqlflexibleservers v1.1.0
 	github.com/gruntwork-io/terratest v0.43.12
 	github.com/launchbynttdata/lcaf-component-terratest v1.0.4
+	github.com/launchbynttdata/lcaf-skeleton-terraform v0.0.0-20240701202937-e643325e173f
 	github.com/stretchr/testify v1.9.0
 )
 
