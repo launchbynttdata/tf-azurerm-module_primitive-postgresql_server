@@ -90,11 +90,12 @@ module "postgresql_server" {
   resource_group_name = module.resource_group.name
   location            = var.location
 
-  create_mode      = var.create_mode
-  postgres_version = var.postgres_version
-  sku_name         = var.sku_name
-  storage_mb       = var.storage_mb
-  storage_tier     = var.storage_tier
+  create_mode       = var.create_mode
+  postgres_version  = var.postgres_version
+  sku_name          = var.sku_name
+  storage_mb        = var.storage_mb
+  storage_tier      = var.storage_tier
+  auto_grow_enabled = var.auto_grow_enabled
 
   identity_ids = var.identity_ids
 
