@@ -231,3 +231,9 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "auto_grow_enabled" {
+  description = "Storage auto grow for PostgreSQL Flexible Server."
+  type        = bool
+  default     = false
+}

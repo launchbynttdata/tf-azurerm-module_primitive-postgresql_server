@@ -27,6 +27,7 @@ resource "azurerm_postgresql_flexible_server" "postgres" {
 
   backup_retention_days        = var.backup_retention_days
   geo_redundant_backup_enabled = var.geo_redundant_backup_enabled
+  auto_grow_enabled            = var.auto_grow_enabled
 
   dynamic "identity" {
     for_each = coalesce(var.identity_ids, [])
