@@ -102,7 +102,7 @@ variable "class_env" {
 variable "location" {
   description = "Location of the Postgres Flexible Server"
   type        = string
-  default     = "eastus"
+  default     = "centralus"
 }
 
 variable "vnet_address_space" {
