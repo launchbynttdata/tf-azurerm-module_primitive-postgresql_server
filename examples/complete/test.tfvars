@@ -1,1 +1,1 @@
-// empty.
+location = "centralus"
