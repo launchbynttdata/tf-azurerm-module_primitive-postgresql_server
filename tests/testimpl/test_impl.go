@@ -38,8 +38,8 @@ func TestComposablePostgresqlServer(t *testing.T, ctx types.TestContext) {
 	}
 
 	t.Run("doesPostgresqlServerExist", func(t *testing.T) {
-		resourceGroupName := terraform.Output(t, ctx.TerratestTerraformOptions(), "resource_group_name")
-		postgresqlName := terraform.Output(t, ctx.TerratestTerraformOptions(), "postgres_name")
+		resourceGroupName := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "resource_group_name")
+		postgresqlName := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "postgres_name")
 
 		postgresqlServer, err := armPostgresClient.Get(context.Background(), resourceGroupName, postgresqlName, nil)
 		if err != nil {
