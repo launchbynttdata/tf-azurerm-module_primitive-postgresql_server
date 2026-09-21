@@ -211,7 +211,7 @@ variable "storage_mb" {
       16777216,
       33553408
     ], var.storage_mb)
-    error_message = "Invalid storage_mb value"
+    error_message = "Invalid storage_mb value."
   }
 }
 
@@ -222,7 +222,7 @@ variable "storage_tier" {
 
   validation {
     condition     = var.storage_tier == null || can(regex("^(P4|P6|P10|P15|P20|P30|P40|P50|P60|P70|P80)$", var.storage_tier))
-    error_message = "Invalid storage_tier value"
+    error_message = "Invalid storage_tier value."
   }
 }
 
